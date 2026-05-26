@@ -21,3 +21,10 @@ litellm --config config.yaml --port 8000
 
 to close the connection:
 ctrl + c
+
+config file: 
+model_list:
+  - model_name: claude-3-5-sonnet-20241022  # What your Python script will ask for
+    litellm_params:
+      model: gemini/gemini-2.5-flash        # What LiteLLM will translate it into
+      api_key: "os.environ/GEMINI_API_KEY"  # Uses the key you exported in your terminal
